@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L04_TextStyle2</title>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: burlywood;
+            padding-left: 1rem;
+        }
+
+        .ivy {
+            text-transform: capitalize;
+            color: peru;
+            font-weight: bolder;
+        }
+
+        p {
+            padding-left: 1rem;
+        }
+
+        p::first-letter {
+            text-transform: capitalize;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        h2 {
+            color: violet;
+            text-transform: capitalize;
+            padding-left: 1rem;
+        }
+
+        .Charlemagne {
+            font-style: italic;
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>briards</h1>
+    <p class="ivy">by ivy duckett</p>
+    <p>the <a href="https://vi.wikipedia.org/wiki/Briard" target="_blank">briard</a>, or erge de brie, is a large breed of dog
+        traditionally used as a herder
+        and guardian of sheep.</p>
+    <h2>breed history</h2>
+    <p>the briard, which is to have riginated in France, has been breed for centuries to herd and to protect sheep. The
+        breed was used by the French Army as sentries, messengers and to search for wounded soldiers because of it fine
+        sense of hearing. Briads were used in the First World War almost to the point of extinction.</p>
+    <p>Currently the population of briads is slowly recovering. <span class="Charlemagne">Charlemagne, Napoleon, Thomas
+            Jefferson and Lafayette</span> all owned briads.</p>
+</body>
+
+</html>
