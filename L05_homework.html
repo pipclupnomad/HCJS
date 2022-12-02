@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L05 Homework</title>
+    <style>
+        * {
+            width: 60vw;
+            margin: auto;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .from {
+            font-size: 3rem;
+            text-transform: capitalize;
+            border: gray solid medium;
+            padding: 0.5rem;
+            width: fit-content;
+            opacity: 0.5;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0rem 1rem 0rem 1rem;
+            z-index: 5;
+            transition-duration: 0.5s;
+        }
+
+        .from:hover {
+            background-color: tomato;
+            color: white;
+        }
+
+        .brownie {
+            margin-top: 1.5rem;
+            width: 75%;
+            transition-duration: 0.5s;
+        }
+
+        .brownie:hover {
+            border-radius: 30%;
+            transform: rotateX(30deg);
+            transform: rotateY(30deg);
+        }
+
+        .recipe {
+            font-size: 1.3em;
+            opacity: 0.8;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+
+        .recipe:hover {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bolder;
+            background-color: blueviolet;
+            width: fit-content;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        .more {
+            text-align: left;
+            margin: 1rem;
+            font-size: 1.3em;
+            font-weight: bolder;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+
+        .more:hover {
+            background-color: tomato;
+            color: white;
+            font-size: 2em;
+            width: 25%;
+        }
+
+
+        figure img {
+            width: 25%;
+            height: fit-content;
+            float: left;
+            padding-bottom: 1rem;
+            padding-right: 0.5rem;
+            transition-duration: 0.5s;
+        }
+
+        figure img:hover {
+            transform: rotateX(30deg);
+            transform: rotateY(10deg);
+            border-top-right-radius: 40%;
+            background-color:darksalmon;
+            padding-bottom: 0.5em;
+        }
+
+        span {
+            color: red;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="from">from <span>a</span> to <span>z</span>ucchini</p>
+    <div class="khung"></div>
+    <img src="images/brownie.jpg" alt="" class="brownie">
+    <div class="recipe">This recipe for individual chocolate cake is so simple and so delectable!</div>
+    <div class="more">More Recipes:</div>
+    <figure>
+        <img src="images/lemon-posset.jpg" alt="">
+        <img src="images/roasted-brussel-sprouts.jpg" alt="">
+        <img src="images/zucchini-cake.jpg" alt="">
+    </figure>
+</body>
+
+</html>
