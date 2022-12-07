@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+</head>
+
+<body>
+    <h3>HTML Form</h3>
+    <div>
+        <h4>Sign Up</h4>
+        <form action="d06_sigin_validate.html" target="_blank" name="formsignup" id="formsignup" method="post">
+            <div>
+                <label for="">Username: </label>
+                <input type="text" name="user" id="User" required value="guest">
+            </div>
+
+            <div>
+                <label for="">password: </label>
+                <input type="password" name="pass" id="pass" required value="123">
+            </div>
+
+            <div>
+                <label for="">Password Confirm: </label>
+                <input type="password" name="pass2" id="pass2">
+            </div>
+
+            <div>
+                <label for="">Email: </label>
+                <input type="email" name="email" id="email" value="guest@gmail.com">
+            </div>
+
+            <div>
+                <label for="">gender</label>
+                <input type="radio" name="gender" id="gender_male" checked value="nam"> male -
+                <input type="radio" name="gender" id="gender_female" value="nu"> female
+            </div>
+
+            <div>
+                <label for="">languages </label>
+                <input type="checkbox" name="languages" id="lang-en" value="english" checked> EN -
+                <input type="checkbox" name="languages" id="lang-fr" value="French"> FR -
+                <input type="checkbox" name="languages" id="lang-jp" value="Japanese"> JP
+            </div>
+
+            <div>
+                <label for="">Location</label>
+                <select name="location" id="loaction">
+                    <option value="">--Select a city--</option>
+                    <option value="">Sai Gon</option>
+                    <option value="">Ha Noi</option>
+                    <option value="">Da Nang</option>
+                    <option value="">Hue</option>
+                    <option value="">Can Tho</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">birthday</label>
+                <input type="date" name="dob" id="dob" value="1990-01-01">
+            </div>
+
+            <div>
+                <label for="">Level</label>
+                <input type="number" name="level" id="level" min="1" max="10" value="5">
+                <!-- <hr>
+            <input type="range" name="rlevel" id="rlevel" min="1" max="10" value="5"> -->
+            </div>
+
+            <div>
+                <label for="">comment</label>
+                <textarea name="comment" id="" cols="" rows="4"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </div>
+
+    </div>
+</form>
+</body>
+
+</html>
