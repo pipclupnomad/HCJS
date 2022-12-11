@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkSignup() {
+            var fname = formLOG.firstName.value;
+            var lname = formLOG.lastName.value;
+            if (fname != "Aptech" || lname != "FPT") {
+                alert("Sign up failed !");
+            }
+            else {
+                alert("Sign up successful !");
+            }
+        }
+    </script>
+    <style>
+        form {
+            width: fit-content;
+            margin-left: 3rem;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: bolder;
+            margin-left: 7rem;
+            margin-bottom: 0.5rem;
+        }
+
+        form>div>input[type=text],
+        input[type=email],
+        input[type=number] {
+            display: inline-block;
+            float: right;
+            width: 10rem;
+            margin-right: 2rem;
+        }
+
+        .checkbox {
+            display: inline-block;
+            margin-left: 1.5rem;
+        }
+
+        .submit>input {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" name="formLOG" id="formLOG" onsubmit="checkSignup()">
+        <h1>Enter Details of your account</h1>
+        <hr>
+        <div>
+            <label for="">First name</label>
+            <input type="text" name="firstName" id="firstName" required autofocus placeholder="nhap ten">
+        </div>
+
+        <div>
+            <label for="">Last name</label>
+            <input type="text" name="lastName" id="lastName" required placeholder="nhap ho">
+        </div>
+
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email" id="email" placeholder="nhap email">
+        </div>
+
+        <div>
+            <label for="">Age</label>
+            <input type="number" name="age" id="age" min="18" max="30" placeholder="nhap tuoi (18-30)">
+        </div>
+
+        <div>
+            <label for="">Are you employed</label>
+            <div class="checkbox">
+                Yes <input type="checkbox" name="checkbox" id="checkbox" checked>
+                No <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+        </div>
+        <hr>
+        <div class="submit">
+            <input type="submit" value="OK">
+            <input type="reset" value="cancel">
+        </div>
+    </form>
+</body>
+
+</html>

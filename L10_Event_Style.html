@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L10_Event_Style</title>
+    <script>
+        function showStyle(obj){
+            obj.style.backgroundColor = "#FFFFCC";
+        }
+
+        function hideStyle(obj){
+            obj.style.backgroundColor = "#FFFFFF";
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="">Username: </label>
+            <input type="email" name="email" id="email" placeholder="nhap email" onfocus="showStyle(this)" onblur="hideStyle(this)" required>
+        </div><br><br>
+        <div>
+            <label for="">Password: </label>
+            <input type="password" name="pass" id="pass" placeholder="nhap mat khau" onfocus="showStyle(this)" onblur="hideStyle(this)">
+        </div><br><br>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+</html>

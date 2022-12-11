@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkLogin() {
+            var uid = formLOG.txtUser.value;
+            var pwd = formLOG.txtPass.value;
+            if (uid != "admin" || pwd != "123") {
+                alert("Login failed !");
+            }
+            else {
+                alert("Login successful !");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="formLOG" id="formLOG" onsubmit="checkLogin()">
+        Username:
+        <input type="text" name="txtUser" id="txtUser" required><br><br>
+        Password:
+        <input type="password" name="txtPass" id="txtPass" required><br><br>
+        <input type="submit" value="LOGIN">
+    </form>
+</body>
+
+</html>
